@@ -16,10 +16,8 @@ const dogLinkCreator = () => {
     let atag = document.createElement('a');
     atag.innerHTML = key;
     atag.href = dogs[key];
-    console.log(atag);
     let litag = document.createElement('li');
     litag.classList.add('dog-link');
-    console.log(litag);
     litag.appendChild(atag);
 
     dogLinks.push(litag);
