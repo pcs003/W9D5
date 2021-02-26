@@ -35,15 +35,13 @@ export default class Clock {
         if (val < 10) {
             return `0${val}`;
         } else {
-            return `${val}`
+            return `${val}`;
         }
     }
 
     printTime() {
-        let str =  `${this.stringify(this.hours)}:${this.stringify(this.minutes)}:${this.stringify(this.seconds)}`;
+        let str = `${this.stringify(this.hours)}:${this.stringify(this.minutes)}:${this.stringify(this.seconds)}`;
         
-        // ele.textContent = str;
-
         return str;
     }
 }
