@@ -1,4 +1,4 @@
-
+/*  */
 html {
   box-sizing: border-box;
   background: #A9DBB8;
@@ -8,7 +8,7 @@ html {
 h1 {
   color: #F0F2EF;
   font-family: 'helvetica neue';
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 200;
 }
 
@@ -20,6 +20,10 @@ h1 {
 .welcome {
   font-weight: 400;
   margin-top: 100px;
+}
+
+.welcome h1 {
+  font-size: 100px;
 }
 
 /*  Phase 4: Slide In & Out Classes */
@@ -50,4 +54,53 @@ h1 {
 .slide.active {
   opacity: 1;
   transform: translateX(0%) scale(1);
+}
+
+@font-face {
+  font-family: 'digital-clock';
+  src:url('../../assets/digital-7.ttf');
+}
+
+.clock-holder {
+  font-family: 'digital-clock';
+  font-size: 35px;
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-family: ;
+}
+
+.drop-down-dog-nav {
+  font-family: 'helvetica neue';
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: right;
+}
+
+.drop-down-dog-nav h3 {
+  color: white;
+  background-color: #ff9191;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav.drop-down-dog-nav ul li{
+  position: relative;
+  right: -250px;
+  color: white;
+  background-color: #ffc4c4;
+  padding: 4px 8px 4px 12px;
+}
+
+nav.drop-down-dog-nav ul li.entered{
+  display: block;
+  transition: 1s;
+  right: 0px;
+}
+
+nav.drop-down-dog-nav ul li a{
+  text-decoration: none;
+  color: white;
 }
